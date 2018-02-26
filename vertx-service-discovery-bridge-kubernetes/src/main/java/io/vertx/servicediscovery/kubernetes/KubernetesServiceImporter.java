@@ -68,6 +68,9 @@ public class KubernetesServiceImporter implements ServiceImporter {
   @Override
   public void start(Vertx vertx, ServicePublisher publisher, JsonObject configuration,
                     Future<Void> completion) {
+
+    LOGGER.warn("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Starting KubernetesServiceImporter !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ");
+
     this.publisher = publisher;
 
     JsonObject conf;
